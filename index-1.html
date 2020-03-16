@@ -671,6 +671,26 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
+  
+  <script>
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
+		"x-rapidapi-key": "4a73a757a4msh35e12743309326dp12a14ajsn12a38dfca357"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+
+</script>
 
 </body>
 
